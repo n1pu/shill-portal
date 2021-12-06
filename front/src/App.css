@@ -1,0 +1,178 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+/* COMMON */
+
+input, textarea {
+  padding: 1rem;
+  width: 400px;
+  margin: .5rem 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+/* APP */
+
+.mainContainer {
+  display: grid;
+  place-items: center;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* LANDING */
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.landing img {
+  position: absolute;
+  z-index: -1;
+  left: 1rem;
+  width: 30%;
+}
+
+.header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.spanEmoji {
+  color: inherit;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: #9D8DF1;
+}
+
+/* FORM */
+
+.shillForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shillInput {
+  position: relative;
+}
+
+.chooseEmoji {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translate(0%, -50%);
+  font-size: 1rem;
+  padding: 0;
+}
+
+/* Shills */
+
+.shill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #9D8DF1;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  position: relative;
+}
+
+.shillInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vote {
+  display: inline;
+  margin: 0 .5rem; 
+  padding: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.vote:hover {
+  color: salmon;
+}
+
+/* USER */
+
+.user, .connectWallet {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  text-align: center;
+}
+
+.userAddress::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.userAddress:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.userAvatar {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 50px;
+}
+
+/* RECENT SHILLS */
+
+#allShills {
+  height: 100vh;
+}
+
+.emoji {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0%, -50%);
+  font-size: 2.5rem;
+}
