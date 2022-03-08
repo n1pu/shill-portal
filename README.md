@@ -1,5 +1,6 @@
 # Shill Portal
 
-## A 3.0 website that gather investors &amp; shillers together.
+## An Ethereum-based dApp that brings together investors & shillers
 
-https://shillportal.nipudos.repl.co/
+### Usage
+Soon.
